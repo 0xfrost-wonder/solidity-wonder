@@ -47,7 +47,7 @@ const deployAndRunContract =  async () => {
         const myName = await contractInstance.BatchRequest.methods.getMyName().call();
         console.log("Result from blockchain", myName);
     }).on('error',  (err) => {
-        console.log("Failed to deploy:", err)
+        console.log("Failed to deploy:", error)
     })
 }
 
